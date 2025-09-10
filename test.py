@@ -4,7 +4,7 @@ t = Turtle()
 
 
 t.shape('turtle')
-
+t.speed(293)
 
 
 def square(x):
