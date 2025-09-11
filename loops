@@ -3,8 +3,10 @@ for i in range(3):
 
 import turtle
 from turtle import * 
+
 t=Turtle()
-t.speed(300)
+t.speed(10674604365346436)
+t.shape('turtle')
 
 sidelength = 100
 rotate = 90
@@ -12,11 +14,42 @@ def square(x,y):
     for i in range(4):
         t.forward(x)
         t.left(y)
-square(100,90)
 
-def doublesquares(iRange):
-     length = 25 
-     for i in range (iRange):
-         square(length, 90)
-         length = length * 2
-doublesquares(5)
+def squareCircle(iRange):
+    for i in range(iRange):
+        square(100,90)
+        t.right(5)
+
+
+
+def doubleSquares(iRange):
+    length = 25
+    for i in range(iRange):
+        square(length)
+        length = length + 5
+        t.right(5)
+
+
+
+
+
+
+def star(x):
+    for i in range(5):
+        t.forward(x)
+        t.right(144)
+   
+
+
+def stars(iRange):
+    length = 25
+    for i in range(iRange):
+        star(length)
+        length = length + 5
+        t.right(5)
+stars(65)
+
+turtle.done
+
+
+
