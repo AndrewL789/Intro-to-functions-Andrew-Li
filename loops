@@ -8,12 +8,17 @@ t=Turtle()
 t.speed(10674604365346436)
 t.shape('turtle')
 
+
+
+""" for i in range(4):
+    t.forward(100)
+    t.left(90) """
 sidelength = 100
 rotate = 90
-def square(x,y):
+def square(x):
     for i in range(4):
         t.forward(x)
-        t.left(y)
+        t.left(90)
 
 def squareCircle(iRange):
     for i in range(iRange):
@@ -29,8 +34,13 @@ def doubleSquares(iRange):
         length = length + 5
         t.right(5)
 
+doubleSquares(60)
 
-
+def addSquares(iRange):
+    length = 25
+    for i in range(iRange):
+        square(length, 90)
+        length += 25
 
 
 
