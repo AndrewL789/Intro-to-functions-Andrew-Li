@@ -5,7 +5,7 @@ import turtle
 from turtle import * 
 
 t=Turtle()
-t.speed(10674604365346436)
+t.speed(106746043658495849485912345678994859564565346436)
 t.shape('turtle')
 
 
